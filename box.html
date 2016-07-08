@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/hover.css" />
+  <link rel="stylesheet" href="css/hover-min.css" />
+  <link rel="stylesheet" href="css/animation.css" />
+  <link rel="stylesheet" href="font-awesome.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container-fluid booking-container style= display: block;">
+<div class="col-lg-11 header-container">
+
+</div>
+  <div class="row ">
+    <div class="col-sm-3 col-md-6 col-lg-4 " >
+<header class="text-center booking-head">
+  Beauty
+</header>
+<br />
+      <img src="C:\Users\sri\Desktop\prt\img\makeup-brush-cosmetics-28810938.jpg" alt="" class="img-rounded center-block">
+      <p>
+        We offer amazing services for beautification <br /><button type="button" id="myBtn" class="btn btn-primary">view more</button>
+      </p>
+      <div id="mymodal" class="modal">
+        <div class="modal-content">
+      <span class="close">x</span>
+      <img src="C:\Users\sri\Desktop\prt\img\makeup-brush-cosmetics-28810938.jpg" alt="" class="img-rounded center-block">
+      <p>
+        this is what we do.
+      </p>
+        </div>
+
+
+      </div>
+    </div>
+<div class="contbod"></div>
+    <div class="col-sm-3 col-md-6 col-lg-4">
+      <header class="text-center booking-head">
+        Price List
+      </header>
+      <br />
+
+      <div class="table-responsive grid">
+       <table class="table">
+         <thead>
+      <tr>
+       <th>
+         Services
+       </th>
+      <th>
+       Price
+      </th>
+      </tr>
+         </thead>
+      <tbody>
+       <tr>
+         makeup
+       </tr>
+      <tr>
+       100 SR
+      </tr>
+      </tbody>
+       </table>
+      </div>
+          </div>
+<div class="col-sm-3 col-md-6 col-lg-4" >
+
+  <header class="text-center" booking-head>
+    Get In Touch
+  </header>
+  <br />
+<form class="form-inline">
+    <div class="form-group">
+
+      <input type="text" class="form-control" id="exampleInputName2" placeholder="Name*" size="10px">
+    </div>
+    <div class="form-group">
+
+      <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email*" size="10px">
+
+    </div>
+
+ <div class="form-group">
+
+ <input type="phone number" class="form-control" id="exampleInputNumber2" placeholder="Mobile Number*" size="10px"  />
+
+ </div>
+ <br />
+    <button type="submit" class="btn btn-primary text-center">Submit</button>
+ <br /> <br />
+ <div class="col-lg-12 calendar-holder">
+   <div class="swiper-container datePickerContainer">
+
+   </div>
+ <div class="btn-nav-container">
+   <div class="swiper-button-next date-button-next">
+
+   </div>
+ <div class="swiper-button-prev date-button-prev">
+
+ </div>
+ </div>
+ </div>
+
+  </form>
+  </div>
+</div>
+<script>
+var modal = document.getElementById('mymodal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</div>
+</body>
+</html>
